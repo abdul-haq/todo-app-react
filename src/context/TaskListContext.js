@@ -22,6 +22,7 @@ const TaskListContextProvider = (props) => {
     const item = tasks.find((task) => task.id === id);
     setEditItem(item);
   };
+  
   const editTask = (id, title, datetime,ischecked) => {
     const newTasks = tasks.map((task) =>
       task.id === id ? { id, title, datetime,ischecked } : task

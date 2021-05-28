@@ -2,7 +2,7 @@ import React, { useContext, useState, useEffect } from "react";
 import { TaskListContext } from "../context/TaskListContext";
 
 const TaskForm = () => {
-  const { addTask, clearList, editItem, editTask } =
+  const { addTask, clearList, editItem, editTask,tasks } =
     useContext(TaskListContext);
   const [title, setTitle] = useState("");
   const [dateTime, setDatetime] = useState("");
