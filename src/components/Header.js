@@ -7,11 +7,20 @@ const Header = () => {
   return (
     <div className="header">
       <h1>Task Manager</h1>
-      <div style={{ display: "flex",width:"90%",marginLeft:"10px",marginBottom:"20px",
-  alignItems: "stretch",
-  justifyContent: "space-between",}}>
-        <span style={{color:"#ccc"}}>Completed Tasks: {completedTasks}</span>
-        <span style={{color:"#ccc"}}>Un-Complete Tasks: {uncompleteTasks}</span>
+      <div
+        style={{
+          display: "flex",
+          width: "90%",
+          marginLeft: "10px",
+          marginBottom: "20px",
+          alignItems: "stretch",
+          justifyContent: "space-between",
+        }}
+      >
+        <span style={{ color: "#ccc" }}>Completed Tasks: {completedTasks}</span>
+        <span style={{ color: "#ccc" }}>
+          Un-Complete Tasks: {uncompleteTasks}
+        </span>
       </div>
     </div>
   );
